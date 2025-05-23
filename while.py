@@ -10,7 +10,8 @@ continuar = True
 while continuar:
     nota = int(input("Digite sua nota do bimestre ou digite 0 para encerrar: "))
     if(nota == 0):
-        break
+        continuar = False
+        # aqui poderia ser um break
     else:
         soma += nota
         quantidade += 1
